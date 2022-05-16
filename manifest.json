@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "YT Playlist Length",
+    "version": "1.0",
+   
+    "description": "It will Show the analytics of a Youtube Playlist",
+   
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/playlist?*"],
+        "js": ["index.js"]
+      }
+    ],
+   
+    "permissions": [
+      "*://duckduckgo.com/html/*"
+    ]
+  }
